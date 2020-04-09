@@ -1,0 +1,7 @@
+/*.uc-cell{width:6.4rem; margin:0 auto;}*/
+/*.uc-cell{ padding:0 0.4rem;margin-bottom:1rem;}*/
+.uc-cell{ color:#494d4d; padding:0.2rem 0.4rem; border-bottom:1px dashed #ccc;}
+.uc-cell h2{max-height:0.9rem; font-size:0.33rem; overflow:hidden;}
+.uc-cell p{max-height:1.8rem; margin-top:0.05rem;overflow:hidden;}
+.flr{float: right}
+/*.uc-cell {clear: both;margin-bottom:1rem;}*/

@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom';
+import './utils/font';
+import './assets/css/index.css'
+import Default from "./layouts/default";
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import './plugins/axios'
+import {serverBaseUrl} from './server';
+React.baseUrl = serverBaseUrl;
+React.Component.prototype.baseUrl=serverBaseUrl;
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDom.render(
+    <Router>
+        <Route component={Default}/>
+    </Router>,
+    document.querySelector('#root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
